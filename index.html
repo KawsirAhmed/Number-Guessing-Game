@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Number Guessing Game</title>
+ <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <!-- Main card container -->
+ <div class="card">
+   <div class="header">
+     <h2>Guess the Number</h2>
+     <p class="subtitle">Pick a number between 1 and 100</p>
+   </div>
+
+
+   <!-- Input section -->
+   <div class="input-group">
+     <input type="number" id="guessInput" placeholder="Enter number..." min="1" max="100">
+     <button id="guessBtn">Guess</button>
+   </div>
+
+
+   <!-- Status feedback message -->
+   <p id="message" class="message">&nbsp;</p>
+
+
+   <!-- Tracker dashboard -->
+   <div class="stats">
+     <div class="stat-box">
+       <span class="label">Attempts</span>
+       <span id="attempts" class="value">0</span>
+     </div>
+     <div class="stat-box">
+       <span class="label">Previous</span>
+       <span id="prevGuesses" class="value">-</span>
+     </div>
+   </div>
+
+
+   <!-- Reset action button -->
+   <button id="resetBtn" class="reset-btn hidden">Play Again</button>
+ </div>
+
+
+ <script src="script.js"></script>
+</body>
+</html>
